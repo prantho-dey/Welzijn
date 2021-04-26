@@ -3,6 +3,12 @@
     @include mq(lg){
         padding-top: 90px;
     }
+    @include mq(md){
+        padding-top: 90px;
+    }
+    @include mq(xs){
+        padding-top: 60px;
+    }
 }
 .initiatief-title {
     h6 {
