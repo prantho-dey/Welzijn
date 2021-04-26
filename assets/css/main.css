@@ -849,7 +849,6 @@ label {
   font-size: 32px;
   line-height: 36px;
   font-weight: 600;
-  margin-bottom: 35px;
 }
 .app-content h2 span {
   color: #fff;
@@ -861,6 +860,11 @@ label {
 }
 .app-content .app-button {
   margin-top: 35px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .app-content .app-button {
+    margin-top: 20px;
+  }
 }
 .app-content .app-button a {
   display: inline-block;
