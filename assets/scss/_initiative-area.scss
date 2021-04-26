@@ -1,0 +1,87 @@
+
+.Initiative-content {
+    h6 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        span {
+            color: $theme-color;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 0px 100px;
+        margin: 0;
+
+        @include mq(lg){
+            padding: 0;
+        }
+        @include mq(md){
+            padding: 0;
+        }
+        @include mq(xs){
+            padding: 0;
+        }
+    }
+}
+
+.Initiative-brand {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin: 20px 0;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    @include mq(lg){
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    @include mq(md){
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    @include mq(xs){
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    a {
+        margin: 0 30px;
+        flex: 0 0 195px;
+
+        @include mq(lg){
+            margin-bottom: 30px;
+        }
+        @include mq(md){
+            margin-bottom: 30px;
+        }
+        @include mq(xs){
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.Initiative-button {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    color: $theme-color;
+    padding: 10px 22px;
+    border: 2px solid $theme-color;
+    border-radius: 30px;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: $theme-color;
+        color: #fff;
+        border-color: transparent;
+    }
+}

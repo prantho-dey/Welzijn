@@ -1,0 +1,111 @@
+
+.initiatief-area {
+    @include mq(lg){
+        padding-top: 90px;
+    }
+}
+.initiatief-title {
+    h6 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        span {
+            color: $theme-color;
+        }
+    }
+}
+.initiatief-tab-navs {
+    
+    .nav-tabs {
+        border-bottom: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+        .nav-link  {
+            text-align: center !important;
+            border: 2px solid $theme-color;
+            color: $theme-color;
+            width: 200px;
+            margin: 0 8px;
+            border-radius: 30px;
+            background-color: transparent;
+            font-size: 17px;
+            font-weight: 500;
+            @include transition(.3s);
+
+            @include mq(lg){
+                width: 180px;
+                margin: 0px 3px;
+            }
+            @include mq(md){
+                margin-bottom: 20px;
+            }
+            @include mq(xs){
+                margin-bottom: 20px;
+            }
+
+            // &:hover {
+            //     background:  #F2F0E3 !important;
+            //     color: $body-color !important;
+            //     border: transparent !important;
+            // }
+            &.active {
+                background:  #F2F0E3 !important;
+                color: $body-color !important;
+                border: transparent !important;
+            }
+        }
+    }
+
+}
+
+.initiatief-content {
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-right: 270px;
+
+    @include mq(lg){
+        margin-left: 160px;
+        margin-right: 100px;
+    }
+    @include mq(md){
+        margin-left: 60px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    @include mq(xs){
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    span {
+        font-size: 17px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px; 
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 500;
+        margin-bottom: 0;
+        color: $theme-color;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+}
