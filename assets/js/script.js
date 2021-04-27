@@ -5,14 +5,20 @@
 	/*------------------------------------
 		Mobile Menu
 	--------------------------------------*/
-
-
+	$('.icon').on('click', function(){
+		$(this).toggleClass('active');
+		$(".mobile-menu").toggleClass("menu-show","10").slideToggle(".menu-show");
+		$('a').click(function(){
+			$('.icon').removeClass('active');
+			$(".mobile-menu").removeClass("menu-show").slideUp(".menu-show");
+		});
+	});
 	/*-------------------------------------------
 	    Sticky Header
 	--------------------------------------------- */
 
 	let win = $(window);
-	let sticky_id = $(".header-area");
+	let sticky_id = $(".main-header");
 	win.on('scroll', function () {
 		let scroll = win.scrollTop();
 		if (scroll < 245) {
