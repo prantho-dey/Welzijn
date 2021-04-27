@@ -29,6 +29,13 @@
 	});
 
 
+	// One Page Nav
+	var top_offset = $('.main-header').height() - 10;
+	$('.main-menu nav ul').onePageNav({
+		currentClass: 'active',
+		scrollOffset: top_offset,
+	});	
+
 	/*------------------------------------
         scrollUp
 	--------------------------------------*/

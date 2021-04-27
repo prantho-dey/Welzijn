@@ -435,6 +435,14 @@ label {
 .main-menu ul li {
   display: inline-block;
 }
+.main-menu ul li.active {
+  color: #1E3C3B;
+}
+.main-menu ul li.active::before {
+  width: 100%;
+  left: auto;
+  right: 0;
+}
 .main-menu ul li:hover a {
   color: #1E3C3B;
 }
@@ -497,6 +505,9 @@ label {
   -ms-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
+}
+.sticky-header .main-menu ul li a::before {
+  bottom: 0;
 }
 .sticky-header .mobile-menu {
   top: 100%;
@@ -1085,6 +1096,11 @@ path:nth-child(6) {
   color: #fff;
   text-align: center;
   line-height: 40px;
+}
+@media (max-width: 767px) {
+  #scrollUp {
+    right: 2px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

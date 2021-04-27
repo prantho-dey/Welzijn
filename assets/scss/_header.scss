@@ -45,7 +45,15 @@
 
         li {
             display: inline-block;
-
+            
+            &.active {
+                color: $body-color;
+                    &::before {
+                        width: 100%;
+                        left: auto;
+                        right: 0;
+                    }
+            }
             &:hover {
                 a {
                     color: $body-color;
@@ -109,6 +117,17 @@
     animation-fill-mode: both;
     @include transition(0.3s);
 
+    .main-menu {
+        ul {
+            li {
+                a {
+                    &::before {
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
     .mobile-menu {
         top: 100%;
     }

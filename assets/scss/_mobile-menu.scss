@@ -97,4 +97,8 @@ path {
     color: #fff;
     text-align: center;
     line-height: 40px;
+
+    @include mq(xs){
+        right: 2px;
+    }
 }
