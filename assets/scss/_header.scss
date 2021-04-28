@@ -7,7 +7,7 @@
         margin: 0 0;
     }
     @include mq(xs){
-        display: none;
+        margin: 0 0;
     }
     &-content {
         p {
@@ -17,6 +17,7 @@
             line-height: 18px;
             span {
                 color: $theme-color;
+                cursor: pointer;
             }
         }
     }   
@@ -45,7 +46,7 @@
 
         li {
             display: inline-block;
-            
+
             &.active {
                 color: $body-color;
                     &::before {

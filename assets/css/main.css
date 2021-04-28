@@ -398,7 +398,7 @@ label {
 }
 @media (max-width: 767px) {
   .header-top {
-    display: none;
+    margin: 0 0;
   }
 }
 .header-top-content p {
@@ -409,6 +409,7 @@ label {
 }
 .header-top-content p span {
   color: #559B9A;
+  cursor: pointer;
 }
 
 .header-area {
@@ -729,6 +730,7 @@ label {
 @media (max-width: 767px) {
   .doelgroep-content {
     margin-top: 100px;
+	margin-left:0;
   }
 }
 .doelgroep-content p {
@@ -1004,7 +1006,6 @@ svg {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 80px;
   height: 80px;
-  margin-top: -11px;
 }
 
 .active svg {

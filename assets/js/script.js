@@ -36,6 +36,11 @@
 		scrollOffset: top_offset,
 	});	
 
+	// Header top hide 
+	$('.header-top-hide').click(function(){
+		$('.header-top-content').hide();
+	});
+
 	/*------------------------------------
         scrollUp
 	--------------------------------------*/
